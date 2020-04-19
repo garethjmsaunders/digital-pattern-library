@@ -1,0 +1,37 @@
+<!-- Begin pattern: tile-grid //-->
+<div class="tile-grid {{bg-color}}"{{#if bg-image}} style="background-image: url({{asset bg-image}});"{{/if}}>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-8">
+			{{#if heading}}
+				<h2>{{{heading}}}</h2>
+			{{else}}
+				<h2 class="sta-grey">{{{heading-dark}}}</h2>
+			{{/if}}
+			</div>
+			{{#each call-to-action-text}}
+			<div class="{{read-more-size}} read-more read-more-container">
+				<a href="#">{{title}}</a>
+			</div>
+			{{/each}}
+		</div>
+		<div class="row">
+		{{#each tiles}}
+			<div class="col-sm-6 col-md-4">
+				<article class="tile {{color}}">
+					<div class="tile-image-title">
+						<img src="{{asset image.url}}" alt="{{image.alt}}">
+						<h3><a href="#" role="button">{{title}}</a></h3>
+					</div>
+					<p>{{description}}</p>
+					<div class="tile-date">{{date-display}}</div>
+					<div class="tile-type"><a href="#">{{type}}</a></div>
+					<div class="clear"></div>
+				</article>
+			</div>
+		{{/each}}
+		</div>
+		<div class="read-more read-more-container-alt"></div>
+	</div>
+</div>
+<!-- End pattern: tile-grid //-->

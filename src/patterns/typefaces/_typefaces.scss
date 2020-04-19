@@ -1,0 +1,28 @@
+/************************************/
+/* BEGIN Pattern: typefaces         */
+/************************************/
+
+.pt-sans,
+.pt-serif {
+    font-size: 2.4em;
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.italic {
+        font-style: italic;
+    }
+}
+
+.pt-sans {
+    font-family: "PT Sans";
+}
+
+.pt-serif {
+    font-family: "PT Serif";
+}
+
+/**********************************/
+/* END Pattern: typefaces         */
+/**********************************/

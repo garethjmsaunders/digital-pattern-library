@@ -1,0 +1,666 @@
+{
+    "options" : [
+        {
+            "option-heading": "Default options",
+            "option-description": "<p>This shows a DataTable with the recommended options enabled: row limit, filter, pagination and current rows indicator.</p>",
+            "option-anchor": "default",
+            "table-id": "example1",
+            "table-class": "dataTable",
+            "table-head": [
+                {
+                    "head-class": "sorting_asc",
+                    "aria-sort": "ascending",
+                    "label": "Name: activate to sort column descending",
+                    "heading": "Name"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Position: activate to sort column ascending",
+                    "heading": "Position"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Office: activate to sort column ascending",
+                    "heading": "Office"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Age: activate to sort column ascending",
+                    "heading": "Age"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Start date: activate to sort column ascending",
+                    "heading": "Start date"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Salary: activate to sort column ascending",
+                    "heading": "Salary"
+                }
+            ],
+            "table-row": [
+                {
+                    "row-class": "odd",
+                    "name": "Airi Satou",
+                    "job-title": "Accountant",
+                    "city": "Tokyo",
+                    "age": "33",
+                    "start-date": "Friday 28 November 2008",
+                    "salary": "162,700"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Angelica Ramos",
+                    "job-title": "Chief executive officer (CEO)",
+                    "city": "London",
+                    "age": "47",
+                    "start-date": "Friday 9 October 2009",
+                    "salary": "1,200,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Ashton Cox",
+                    "job-title": "Junior technical author",
+                    "city": "San Francisco",
+                    "age": "66",
+                    "start-date": "Monday 12 January 2009",
+                    "salary": "86,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Bradley Greer",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "age": "41",
+                    "start-date": "Saturday 13 October 2012",
+                    "salary": "132,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Brenden Wagner",
+                    "job-title": "Software engineer",
+                    "city": "San Francisco",
+                    "age": "28",
+                    "start-date": "Tuesday 7 June 2011",
+                    "salary": "206,850"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Brielle Williamson",
+                    "job-title": "Integration specialist",
+                    "city": "New York",
+                    "age": "61",
+                    "start-date": "Sunday 2 December 2012",
+                    "salary": "372,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Bruno Nash",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "age": "38",
+                    "start-date": "Tuesday 3 May 2011",
+                    "salary": "163,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Caesar Vance",
+                    "job-title": "Pre-sales support",
+                    "city": "New York",
+                    "age": "21",
+                    "start-date": "Monday 12 May 2011",
+                    "salary": "106,450"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Cara Stevens",
+                    "job-title": "Sales assistant",
+                    "city": "New York",
+                    "age": "46",
+                    "start-date": "Tuesday 6 December 2011",
+                    "salary": "145,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Cedric Kelly",
+                    "job-title": "Senior JavaScript developer",
+                    "city": "Edinburgh",
+                    "age": "22",
+                    "start-date": "Thursday 29 March 2012",
+                    "salary": "433,060"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Charde Marshall",
+                    "job-title": "Regional director",
+                    "city": "San Francisco",
+                    "age": "36",
+                    "start-date": "Thursday 16 October 2008",
+                    "salary": "470,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Colleen Hurst",
+                    "job-title": "JavaScript developer",
+                    "city": "San Francisco",
+                    "age": "39",
+                    "start-date": "Tuesday 15 March 2009",
+                    "salary": "205,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Dai Rios",
+                    "job-title": "Personnel lead",
+                    "city": "Edinburgh",
+                    "age": "35",
+                    "start-date": "Wednesday 6 August 2012",
+                    "salary": "217,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Donna Snider",
+                    "job-title": "Customer Support",
+                    "city": "New York",
+                    "age": "27",
+                    "start-date": "Tuesday 25 January 2011",
+                    "salary": "112,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Doris Wilder",
+                    "job-title": "Sales assistant",
+                    "city": "Sydney",
+                    "age": "23",
+                    "start-date": "Monday 2 April 2010",
+                    "salary": "85,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Finn Camacho",
+                    "job-title": "Support engineer",
+                    "city": "San Francisco",
+                    "age": "47",
+                    "start-date": "Tuesday 7 July 2009",
+                    "salary": "87,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Fiona Green",
+                    "job-title": "Chief operating officer (COO)",
+                    "city": "San Francisco",
+                    "age": "48",
+                    "start-date": "Thursday 11 March 2010",
+                    "salary": "850,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Garrett Winters",
+                    "job-title": "Accountant",
+                    "city": "Tokyo",
+                    "age": "63",
+                    "start-date": "Monday 25 July 2011",
+                    "salary": "170,750"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Gavin Cortez",
+                    "job-title": "Team leader",
+                    "city": "San Francisco",
+                    "age": "22",
+                    "start-date": "Sunday 6 October 2008",
+                    "salary": "235,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Gavin Joyce",
+                    "job-title": "Developer",
+                    "city": "Edinburgh",
+                    "age": "42",
+                    "start-date": "Wednesday 22 August 2010",
+                    "salary": "92,575"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Gloria Little",
+                    "job-title": "Systems administrator",
+                    "city": "New York",
+                    "age": "59",
+                    "start-date": "Friday 10 April 2009",
+                    "salary": "237,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Haley Kennedy",
+                    "job-title": "Senior marketing designer",
+                    "city": "London",
+                    "age": "43",
+                    "start-date": "Tuesday 18 February 2012",
+                    "salary": "313,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Hermione Butler",
+                    "job-title": "Regional director",
+                    "city": "London",
+                    "age": "47",
+                    "start-date": "Monday 21 March 2011",
+                    "salary": "356,250"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Herrod Chandler",
+                    "job-title": "Sales assistant",
+                    "city": "San Francisco",
+                    "age": "59",
+                    "start-date": "Monday 6 August 2012",
+                    "salary": "137,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Hope Fuentes",
+                    "job-title": "Secretary",
+                    "city": "San Francisco",
+                    "age": "41",
+                    "start-date": "Friday 12 February 2010",
+                    "salary": "109,850"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Howard Hatfield",
+                    "job-title": "Office manager",
+                    "city": "San Francisco",
+                    "age": "51",
+                    "start-date": "Tuesday 16 October 2008",
+                    "salary": "164,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Jackson Bradshaw",
+                    "job-title": "Director",
+                    "city": "New York",
+                    "age": "65",
+                    "start-date": "Friday 26 September 2008",
+                    "salary": "645,750"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Jena Gaines",
+                    "job-title": "Office manager",
+                    "city": "London",
+                    "age": "30",
+                    "start-date": "Friday 19 December 2008",
+                    "salary": "90,560"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Jenette Caldwell",
+                    "job-title": "Development lead",
+                    "city": "New York",
+                    "age": "30",
+                    "start-date": "Saturday 3 July 2011",
+                    "salary": "345,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Jennifer Acosta",
+                    "job-title": "Junior JavaScript developer",
+                    "city": "Edinburgh",
+                    "age": "43",
+                    "start-date": "Friday 1 March 2013",
+                    "salary": "75,650"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Jennifer Chang",
+                    "job-title": "Regional director",
+                    "city": "Singapore",
+                    "age": "28",
+                    "start-date": "Sunday 14 November 2010",
+                    "salary": "357,650"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Jonas Alexander",
+                    "job-title": "Developer",
+                    "city": "San Francisco",
+                    "age": "30",
+                    "start-date": "Wednesday 14 July 2010",
+                    "salary": "86,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Lael Greer",
+                    "job-title": "Systems administrator",
+                    "city": "London",
+                    "age": "21",
+                    "start-date": "Friday 27 February 2009",
+                    "salary": "103,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Martena Mccray",
+                    "job-title": "Post-sales support",
+                    "city": "Edinburgh",
+                    "age": "46",
+                    "start-date": "Wednesday 9 March 2011",
+                    "salary": "324,050"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Michael Bruce",
+                    "job-title": "JavaScript developer",
+                    "city": "Singapore",
+                    "age": "29",
+                    "start-date": "Monday 27 June 2011",
+                    "salary": "183,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Michael Silva",
+                    "job-title": "Marketing designer",
+                    "city": "London",
+                    "age": "66",
+                    "start-date": "Tuesday 27 June 2012",
+                    "salary": "198,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Michelle House",
+                    "job-title": "Integration specialist",
+                    "city": "Sydney",
+                    "age": "37",
+                    "start-date": "Thursday 2 June 2011",
+                    "salary": "95,400"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Olivia Liang",
+                    "job-title": "Support engineer",
+                    "city": "Singapore",
+                    "age": "64",
+                    "start-date": "Thursday 3 February 2011",
+                    "salary": "234,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Paul Byrd",
+                    "job-title": "Chief financial officer (CFO)",
+                    "city": "New York",
+                    "age": "64",
+                    "start-date": "Wednesday 9 June 2010",
+                    "salary": "725,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Prescott Bartlett",
+                    "job-title": "Technical author",
+                    "city": "London",
+                    "age": "27",
+                    "start-date": "Saturday 7 May 2011",
+                    "salary": "145,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Quinn Flynn",
+                    "job-title": "Support lead",
+                    "city": "Edinburgh",
+                    "age": "22",
+                    "start-date": "Sunday 3 March 2013",
+                    "salary": "342,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Rhona Davidson",
+                    "job-title": "Integration specialist",
+                    "city": "Tokyo",
+                    "age": "55",
+                    "start-date": "Thursday 14 October 2010",
+                    "salary": "327,900"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Sakura Yamamoto",
+                    "job-title": "Support engineer",
+                    "city": "Tokyo",
+                    "age": "37",
+                    "start-date": "Wednesday 19 August 2009",
+                    "salary": "139,575"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Serge Baldwin",
+                    "job-title": "Data coordinator",
+                    "city": "Singapore",
+                    "age": "64",
+                    "start-date": "Monday 9 April 2012",
+                    "salary": "138,575"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Shad Decker",
+                    "job-title": "Regional director",
+                    "city": "Edinburgh",
+                    "age": "51",
+                    "start-date": "Thursday 3 November 2008",
+                    "salary": "183,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Shou Itou",
+                    "job-title": "Regional marketing",
+                    "city": "Tokyo",
+                    "age": "20",
+                    "start-date": "Sunday 14 August 2011",
+                    "salary": "163,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Sonya Frost",
+                    "job-title": "Software engineer",
+                    "city": "Edinburgh",
+                    "age": "23",
+                    "start-date": "Saturday 3 December 2008",
+                    "salary": "103,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Suki Burks",
+                    "job-title": "Developer",
+                    "city": "London",
+                    "age": "53",
+                    "start-date": "Thursday 22 October 2009",
+                    "salary": "114,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Tatyana Fitzpatrick",
+                    "job-title": "Regional director",
+                    "city": "London",
+                    "age": "19",
+                    "start-date": "Wednesday 17 March 2010",
+                    "salary": "385,750"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Thor Walton",
+                    "job-title": "Developer",
+                    "city": "New York",
+                    "age": "61",
+                    "start-date": "Sunday 11 August 2013",
+                    "salary": "98,540"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Tiger Nixon",
+                    "job-title": "System architect",
+                    "city": "Edinburgh",
+                    "age": "61",
+                    "start-date": "Monday 25 April 2011",
+                    "salary": "320,800"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Timothy Mooney",
+                    "job-title": "Office manager",
+                    "city": "London",
+                    "age": "37",
+                    "start-date": "Thursday 1 December 2008",
+                    "salary": "136,200"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Unity Butler",
+                    "job-title": "Marketing designer",
+                    "city": "San Francisco",
+                    "age": "47",
+                    "start-date": "Wednesday 9 June 2009",
+                    "salary": "85,675"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Vivian Harrell",
+                    "job-title": "Financial controller",
+                    "city": "San Francisco",
+                    "age": "62",
+                    "start-date": "Saturday 14 February 2009",
+                    "salary": "452,500"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Yuri Berry",
+                    "job-title": "Chief marketing officer (CMO)",
+                    "city": "New York",
+                    "age": "40",
+                    "start-date": "Thursday 25 June 2009",
+                    "salary": "675,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Zenaida Frank",
+                    "job-title": "Software engineer",
+                    "city": "New York",
+                    "age": "63",
+                    "start-date": "Monday 4 January 2010",
+                    "salary": "125,250"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Zorita Serrano",
+                    "job-title": "Software engineer",
+                    "city": "San Francisco",
+                    "age": "56",
+                    "start-date": "Friday 1 June 2012",
+                    "salary": "115,000"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Minimal options",
+            "option-description": "<p>This shows the minimum options for a DataTable and must only be used when the table contains ten rows or fewer.</p>",
+            "option-anchor": "minimal",
+            "table-id": "example2",
+            "table-class": "dataTable-simplified",
+            "table-head": [
+                {
+                    "head-class": "sorting_asc",
+                    "aria-sort": "ascending",
+                    "label": "Name: activate to sort column descending",
+                    "heading": "Name"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Position: activate to sort column ascending",
+                    "heading": "Position"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Office: activate to sort column ascending",
+                    "heading": "Office"
+                },
+                {
+                    "head-class": "sorting",
+                    "label": "Salary: activate to sort column ascending",
+                    "heading": "Salary"
+                }
+            ],
+            "table-row": [
+                {
+                    "row-class": "odd",
+                    "name": "Airi Satou",
+                    "job-title": "Accountant",
+                    "city": "Tokyo",
+                    "salary": "162,700"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Angelica Ramos",
+                    "job-title": "Chief executive officer (CEO)",
+                    "city": "London",
+                    "salary": "1,200,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Ashton Cox",
+                    "job-title": "Junior technical author",
+                    "city": "San Francisco",
+                    "salary": "86,000"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Bradley Greer",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "salary": "132,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Brenden Wagner",
+                    "job-title": "Software engineer",
+                    "city": "San Francisco",
+                    "salary": "206,850"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Brielle Williamson",
+                    "job-title": "Integration specialist",
+                    "city": "New York",
+                    "salary": "372,000"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Bruno Nash",
+                    "job-title": "Software engineer",
+                    "city": "London",
+                    "salary": "163,500"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Caesar Vance",
+                    "job-title": "Pre-sales support",
+                    "city": "New York",
+                    "salary": "106,450"
+                },
+                {
+                    "row-class": "odd",
+                    "name": "Cara Stevens",
+                    "job-title": "Sales assistant",
+                    "city": "New York",
+                    "salary": "145,600"
+                },
+                {
+                    "row-class": "even",
+                    "name": "Cedric Kelly",
+                    "job-title": "Senior JavaScript developer",
+                    "city": "Edinburgh",
+                    "salary": "433,060"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,74 @@
+
+/*********************************/
+/* BEGIN Pattern: contact-card   */
+/*********************************/
+
+ .contact-card {
+    background-color: rgb(240, 240, 240);
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    clear: both;
+    height: 260px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 1em;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.contact-card.student {
+    height: 230px;
+}
+
+.contact-card img {
+    border: 1px solid rgb(204, 204, 204);
+    float: right;
+    height: 127px;
+    margin-top: 10px;
+    position: relative;
+    width: 111px;
+    z-index: 0;
+}
+
+.contact-card h3 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-card-links {
+    color: $sta-grey;
+    font-size:   15px;
+    font-weight: bold;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-card .contact {
+    position: absolute;
+      bottom: 0;
+}
+
+.contact-card h4 {
+    color: $sta-grey;
+    font-size:   18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contact-card, .contact-card.student {
+        max-width: 385px;
+        margin: 10px auto;
+    }
+
+    .contact-card img {
+        height: 107px;
+        width: 91px;
+    }
+}
+
+/*********************************/
+/* END Pattern: contact-card     */
+/*********************************/

@@ -1,0 +1,113 @@
+{
+    "options": [
+        {
+            "option-heading": "Navbox sizes",
+            "option-description": "",
+            "option-anchor": "sizes",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Small (&frac13;)",
+                    "column": "col-sm-4",
+                    "row": true
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1110x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Medium (&frac12;)",
+                    "column": "col-sm-6",
+                    "row": true
+                },
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/1500x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Large (&frac23;)",
+                    "column": "col-sm-8",
+                    "row": true
+                }
+            ]
+
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox with image and paragraph",
+            "option-description": "",
+            "option-anchor": "image-paragraph",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox with image",
+            "option-description": "",
+            "option-anchor": "image",
+            "box-size": [
+                {
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/720x480.png",
+                        "alt": "Description"
+                    },
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "row": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox with paragraph",
+            "option-description": "",
+            "option-anchor": "paragraph",
+            "box-size": [
+                {
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    "row": true
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Navbox without image and paragraph",
+            "option-description": "",
+            "option-anchor": "blank",
+            "box-size": [
+                {
+                    "title": "Study",
+                    "column": "col-sm-4",
+                    "row": true
+                }
+            ]
+        }
+    ]
+}

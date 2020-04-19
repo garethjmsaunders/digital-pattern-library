@@ -1,0 +1,28 @@
+---
+title: News updates
+---
+
+<p>The news updates pattern displays featured links including meta data in two columns. The pattern is intended for landing pages and provides a solution for linking to articles, such as news items or blog posts.</p>
+
+<h3>Rules for news updates</h3>
+<ul>
+	<li>There must be only one news updates section on a page.</li>
+	<li>There must be a maximum of one category per article link.</li>
+	<li>Featured images must be 750 &times; 500 pixels.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#news-updates-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/news-updates-options.options}}
+</ul>
+
+{{#news-updates-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>{{> news-updates}}<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> news-updates}}</code></pre>
+{{/news-updates-options.options}}

@@ -1,0 +1,108 @@
+{
+    "options": [
+        {
+            "option-heading": "Primary navigation",
+            "option-description": "<p>The primary navigation menu is required on all homepages and must use the primary palette colour.</p>",
+            "option-anchor": "primary-only",
+            "primary":[
+                {
+                    "title": "Undergraduate",
+                    "selected": true
+                },
+                {
+                    "title": "Postgraduate",
+                    "selected": false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "selected": false
+                },
+                {
+                    "title": "Study abroad",
+                    "selected": false
+                },
+                {
+                    "title": "International",
+                    "selected": false
+                },
+                {
+                    "title": "Access and outreach",
+                    "selected": false
+                },
+                {
+                    "title": "Courses",
+                    "selected": false
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Primary and secondary navigation",
+            "option-description": "<p>The secondary navigation bar is required on all webpages apart from a homepage and must use the secondary palette colour.</p>",
+            "option-anchor": "primary-secondary",
+            "primary": [
+                {
+                    "title": "Undergraduate",
+                    "selected": true
+                },
+                {
+                    "title": "Postgraduate",
+                    "selected": false
+                },
+                {
+                    "title": "Non-degree courses",
+                    "selected": false
+                },
+                {
+                    "title": "Study abroad",
+                    "selected": false
+                },
+                {
+                    "title": "International",
+                    "selected": false
+                },
+                {
+                    "title": "Access and outreach",
+                    "selected": false
+                },
+                {
+                    "title": "Courses",
+                    "selected": false
+                }
+            ],
+            "secondary": [
+                {
+                    "title": "Study options",
+                    "selected": false
+                },
+                {
+                    "title": "Why St Andrews?",
+                    "selected": false
+                },
+                {
+                    "title": "Fees and funding",
+                    "selected": false
+                },
+                {
+                    "title": "Accommodation",
+                    "selected": false
+                },
+                {
+                    "title": "Your future",
+                    "selected": false
+                },
+                {
+                    "title": "Meet us",
+                    "selected": false
+                },
+                {
+                    "title": "How to apply",
+                    "selected": false
+                }
+            ]
+        }
+    ]
+ }

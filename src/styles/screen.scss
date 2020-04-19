@@ -1,0 +1,217 @@
+/**
+ * screen.scss
+ * Master scss file for assembling the DPL patterns.
+ *
+ *
+ * @version     0.1 2016-11-10
+ * @author      Aaron Lott <al244@st-andrews.ac.uk>
+*/
+
+/* ==========================================================================
+IMPORTS AND PATTERNS
+========================================================================== */
+
+@charset "utf-8";
+
+@import 'utilities';
+@import 'colors';
+@import 'fonts';
+@import 'bootstrap-custom';
+@import 'icons';
+@import 'figures';
+@import 'jquery-ui-datepicker';
+@import 'vendor/font-awesome';
+@import 'datatables';
+
+/* Patterns import
+   --------------------------------------------------------------------------
+
+   @version 1.0.0
+   */
+@import 'accordion/accordion';
+@import 'breadcrumbs/breadcrumbs';
+@import 'buttons/buttons';
+@import 'category-header/category-header';
+@import 'code/code';
+@import 'contact-card/contact-card';
+@import 'content-whole/content-whole';
+@import 'content-halves/content-halves';
+@import 'content-thirds/content-thirds';
+@import 'datatables/datatables';
+@import 'featured-media/featured-media';
+@import 'featured-news/featured-news';
+@import 'featured-people/featured-people';
+@import 'font-awesome/font-awesome';
+@import 'footer/footer';
+@import 'form-banner/form-banner';
+@import 'form-elements/form-elements';
+@import 'form-errors/form-errors';
+@import 'gallery/gallery';
+@import 'glyphicons/glyphicons';
+@import 'google-maps/google-maps';
+@import 'header/header';
+@import 'hero-banner/hero-banner';
+@import 'info-bite/info-bite';
+@import 'info-bite-grid/info-bite-grid';
+@import 'kis-widget/kis-widget';
+@import 'news-updates/news-updates';
+@import 'long-form-asides/long-form-asides';
+@import 'long-form-credits/long-form-credits';
+@import 'long-form-end-piece/long-form-end-piece';
+@import 'long-form-gallery/long-form-gallery';
+@import 'long-form-intro/long-form-intro';
+@import 'long-form-quotes/long-form-quotes';
+@import 'long-form-sections/long-form-sections';
+@import 'masonry/masonry';
+@import 'masonry-grid/masonry-grid';
+@import 'more-news/more-news';
+@import 'navbox/navbox';
+@import 'navbox-grid/navbox-grid';
+@import 'navigation-bar/navigation-bar';
+@import 'numerical-list/numerical-list';
+@import 'panel/panel';
+@import 'search-bar/search-bar';
+@import 'secondary-call/secondary-call';
+@import 'section-header/section-header';
+@import 'share-options/share-options';
+@import 'showcase-banner/showcase-banner';
+@import 'staff-profile/staff-profile';
+@import 'sticky-nav/sticky-nav';
+@import 'subject-combo/subject-combo';
+@import 'tabs/tabs';
+@import 'text-banner/text-banner';
+@import 'tile-grid/tile-grid';
+@import 'typefaces/typefaces';
+
+/* Other vendor scripts
+   --------------------------------------------------------------------------
+
+   @version 1.0.0
+   */
+@import 'vendor/jquery.theatre.min';
+@import 'vendor/lightbox.min';
+
+
+/* ==========================================================================
+GLOBAL CSS RULES
+========================================================================== */
+
+
+/* Content global rules
+   --------------------------------------------------------------------------
+   Used in 'content-whole', 'content-thirds' and 'content-halves' patterns.
+
+   @version 1.0.0
+   */
+
+.content {
+    margin-top: 20px;
+
+    img {
+      max-width: 100%;
+    }
+}
+
+/* Course patterns global rules
+   --------------------------------------------------------------------------
+
+   @version 1.0.0
+   */
+
+.course {
+	padding: 40px 15px;
+}
+
+.pgt-intro {
+	padding-bottom: 25px;
+}
+
+.course.st-andrews-blue-light {
+	color: rgb(255,255,255);
+    background-color: rgba(27,116,195,1);
+}
+.course.st-andrews-grey-light {
+    background-color: rgba(240,240,240,1);
+}
+
+.course tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+.course tr {
+    line-height: 1.7em;
+}
+
+/* Misc global rules
+  --------------------------------------------------------------------------
+   Fix for t4 image issues use by adding these two classes to the parent
+   container of the img in question. Also the hideaway style.
+
+   @version 1.0.0
+   */
+
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.img-responsive.override_image_size img {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.hideaway-reveal {
+	margin-top: 3em;
+}
+
+img.placeholder_size {
+	height: 85px;
+	width: 85px;
+}
+.alert > p + p {
+  margin-top: 25px;
+}
+
+div.container .row .col-xs-12 {
+  min-height: 0;
+}
+
+/* Global colour rules
+  --------------------------------------------------------------------------
+  Colours used on various patterns
+
+  @version 1.0.0
+  */
+
+
+.sta-blue {
+    background-color: $sta-blue;
+}
+
+.sta-blue-light {
+    background-color: $sta-blue-light;
+}
+
+.sta-green {
+    background-color: $sta-green;
+}
+
+.sta-burgundy {
+    background-color: $sta-burgundy;
+}
+
+.sta-purple {
+    background-color: $sta-purple;
+}
+
+.sta-grey-light {
+    background-color: $sta-grey-light;
+}

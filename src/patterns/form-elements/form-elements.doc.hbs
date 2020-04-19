@@ -1,0 +1,29 @@
+---
+title: Form elements
+---
+
+<p>Keep forms as simple as possible, see <a href="../../examples/form.html">form example</a> for more information.</p>
+
+<h3>Rules for form elements</h3>
+<ul>
+	<li>You must only ask for the information you absolutely need.</li>
+	<li>You must not mark mandatory fields with asterisks.</li>
+	<li>You must not use forms in sidebars.</li>
+	<li>You may ask for optional information, if so, you must mark the labels of optional fields with ‘(optional)’.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#form-elements-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/form-elements-options.options}}
+</ul>
+
+{{#form-elements-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{> form-elements}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> form-elements}}</code></pre>
+{{/form-elements-options.options}}

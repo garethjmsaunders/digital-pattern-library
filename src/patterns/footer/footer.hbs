@@ -1,0 +1,96 @@
+<!-- Begin pattern: footer //-->
+
+{{#if affiliation-banner}}
+<div id="affiliation-banner">
+    <div class="container">
+        <div class="row">
+            {{#each columns}}
+            <div class="col-sm-6 text-center affiliation-logo">
+                <a href="{{image-link}}"><img src="{{image}}" alt="{{image-alt}}" title="{{image-title}}"></a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+{{/if}}
+
+<footer role="contentinfo">
+    {{#if website-footer}}
+    <div id="website-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" id="footer-tools">
+                    {{#section1}}
+                    <h3>{{title}}</h3>
+                    <ul>
+                        {{#links}}
+                        <li><a href="{{url}}">{{title}}</a></li>
+                        {{/links}}
+                    </ul>
+                    {{/section1}}
+                    {{#section2}}
+                    <h3>{{title}}</h3>
+                    <ul>
+                        {{#links}}
+                        <li><a href="{{url}}">{{title}}</a></li>
+                        {{/links}}
+                    </ul>
+                    {{/section2}}
+                    {{#section3}}
+                    <h3>{{title}}</h3>
+                    <ul>
+                        {{#links}}
+                        <li><a href="{{url}}">{{title}}</a></li>
+                        {{/links}}
+                    </ul>
+                    {{/section3}}
+                </div>
+                <div class="col-sm-4" id="footer-navigation">
+                    {{#section4}}
+                    <h3>{{title}}</h3>
+                    <ul>
+                        {{#links}}
+                        <li><a href="{{url}}">{{title}}</a></li>
+                        {{/links}}
+                    </ul>
+                    {{/section4}}
+                </div>
+                <div class="col-sm-4" id="footer-contact">
+                    {{#contact}}
+                    <h3><a href="{{url}}">Contact us</a></h3>
+                    <address>
+                        <p>
+                            <strong>{{unit}}</strong><br>
+                            {{{address}}}
+                        </p>
+                        <p><strong>Phone:</strong> {{phone}}</p>
+                    </address>
+                    {{/contact}}
+                </div>
+            </div> <!-- End .row -->
+        </div> <!-- End .container -->
+    </div> <!-- End #website-footer -->
+    {{/if}}
+    <div id="university-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p id="footer-charity" role="contentinfo">&copy; <script>document.write(new Date().getFullYear());</script> The University of St Andrews is a charity registered in Scotland, No SC013532.</p>
+                    <ul id="footer-links">
+                        <li><a href="http://www.st-andrews.ac.uk/terms/">Terms and conditions</a></li>
+                        <li><a href="http://www.st-andrews.ac.uk/help/">Website help</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul id="social">
+                    <li><a href="https://www.facebook.com/uniofsta"><span class="sr-only">Facebook</span><i class="fa fa-facebook-square fa-2x" title="Facebook"></i></a></li>
+                        <li><a href="https://twitter.com/univofstandrews/"><span class="sr-only">Twitter</span><i class="fa fa-twitter-square fa-2x" title="Twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/uniofstandrews"><span class="sr-only">Instagram</span><i class="fa fa-instagram fa-2x" title="Instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/UofStAndrews"><span class="sr-only">YouTube</span><i class="fa fa-youtube-square fa-2x" title="YouTube"></i></a></li>
+                    </ul>
+                </div>
+            </div> <!-- End .row //-->
+        </div> <!-- End .container //-->
+    </div> <!-- End #university-footer //-->
+</footer>
+<!-- End pattern: footer //-->

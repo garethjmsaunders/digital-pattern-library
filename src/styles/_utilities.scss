@@ -1,0 +1,57 @@
+@mixin rotate($deg) {
+    -webkit-transform:  rotate($deg);
+       -moz-transform:  rotate($deg);
+         -o-transform:  rotate($deg);
+        -ms-transform:  rotate($deg);
+            transform:  rotate($deg);
+}
+
+@mixin -dpl-transition() {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+body {
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+    font-variant-ligatures: common-ligatures;
+}
+
+.clear {
+	clear:both
+}
+
+@mixin clearfix-alt{ //apply mixin rather than using extra clearfix div
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.full-width {
+	width: 100%;
+}
+
+.top-buffer {
+	margin-top: 30px;
+}
+
+.bottom-buffer {
+	margin-bottom: 50px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Remove mobile safari default styles */
+
+textarea, input[type~=text], input[type~=submit] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}

@@ -1,0 +1,23 @@
+---
+title: Typography
+---
+
+<p>Appropriate typography must be used in combination with the University's <a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/house-style/">house style</a>. Typography must not be changed using inline CSS.</p>
+
+<h3>Options available</h3>
+<ul>
+{{#typography-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/typography-options.options}}
+</ul>
+
+{{#typography-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+
+{{>  typography}}
+<div class="clear"></div>
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> typography}}</code></pre>
+{{/typography-options.options}}

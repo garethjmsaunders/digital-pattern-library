@@ -1,0 +1,13 @@
+<!-- Begin pattern: secondary-call //-->
+<div class="secondary-call {{classes}}" {{#if bg-image}}style="background-image: url({{asset bg-image}});"{{/if}}>
+    <div class="container">
+        <div class="call-heading">{{heading}}</div>
+        <p>{{paragraph}}</p>
+        <div class="call-to-action-buttons">
+        {{#each action}}
+            <a class="btn btn-primary btn-lg" href="{{url}}" tabindex="0" role="button">{{text}}</a>
+        {{/each}}
+        </div>
+    </div>
+</div>
+<!-- End pattern: secondary-call //-->

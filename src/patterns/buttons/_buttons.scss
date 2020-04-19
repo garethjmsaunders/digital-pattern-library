@@ -1,0 +1,28 @@
+
+/*********************************/
+/* BEGIN Pattern: buttons        */
+/*********************************/
+
+@media (max-width: 600px) {
+    .btn, .read-more a {
+        margin-bottom: 5px;
+    }
+}
+
+.btn-tag {
+	background: white;
+	border: 1px solid $sta-grey;
+	color: $sta-blue;
+	font-weight: bold;
+
+	&:hover {
+		background: $sta-grey-light;
+        border-color: $sta-grey;
+        color: $sta-blue;
+	}
+}
+
+
+/*********************************/
+/* END Pattern: buttons          */
+/*********************************/

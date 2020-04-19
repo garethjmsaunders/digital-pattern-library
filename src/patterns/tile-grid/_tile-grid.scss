@@ -1,0 +1,204 @@
+
+/*********************************/
+/* BEGIN Pattern: tile-grid      */
+/*********************************/
+
+.tile {
+    background-color: white;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 0 auto 3em;
+    max-width: 360px;
+}
+
+.tile.tile-responsive {
+    background-color: white;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 0 auto 2em;
+    max-width: 100%;
+}
+
+.tile-image-title {
+    position: relative;
+}
+
+.tile img {
+    height: auto;
+ 	position: relative;
+    width: 100%;
+}
+
+.tile h3 {
+    background: $sta-blue-T;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: .5em .8em;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    @include -dpl-transition();
+}
+
+.tile:hover {
+    cursor: pointer;
+}
+
+.tile:hover h3 {
+    background: $sta-blue-T-hover;
+}
+
+.tile h3 a {
+    color: white;
+	text-decoration: none;
+}
+
+.tile p {
+    font-size: 1em;
+ 	height: 5em;
+ 	line-height: 1.2em;
+ 	margin: 1.5em 0;
+    overflow: hidden;
+    padding: 0 1em;
+}
+
+.tile-date {
+    color: $sta-grey;
+    float: left;
+    font-size:   15px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.tile-type {
+    color: $sta-grey;
+    float: right;
+    font-size:   15px;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+/* Colors */
+
+.tile.green h3 {
+    background: $sta-green-T;
+}
+
+.tile.green:hover h3 {
+    background: $sta-green-T-hover;
+}
+
+.tile.purple h3 {
+    background: $sta-purple-T;
+}
+
+.tile.purple:hover h3 {
+    background: $sta-purple-T-hover;
+}
+
+.tile.red h3 {
+    background: $sta-red-T;
+}
+
+.tile.red:hover h3 {
+    background: $sta-red-T-hover;
+}
+
+@media (max-width: 767px) {
+    .tile {
+        margin-bottom: 2em;
+    }
+
+    .tile p {
+        height: auto;
+    }
+}
+
+
+.tile-grid {
+	background-position:     center;
+	background-repeat:       no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	color: inherit;
+	font-weight: 200;
+	line-height: 2;
+	padding: 30px 0;
+}
+
+.tile-grid.white {
+    background-color: white;
+}
+
+.tile-grid.light-grey {
+    background-color: $sta-grey-light;
+}
+
+.tile-grid h2 {
+	color: white;
+	font-size: 2.5em;
+	margin: 10px 0 20px 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tile-grid h2.sta-grey {
+	color: $sta-grey;
+	text-shadow: none;
+}
+
+.read-more a {
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-block;
+	color: white;
+	font-size: 1.5em;
+	line-height: 2em;
+	margin: 0 0 40px 0;
+	padding: 0.4em 0.8em 0.2em 0.8em;
+	text-align: left;
+}
+
+.read-more a:before {
+	@extend i.chevron;
+	content: '';
+	float: right;
+	height: 28px;
+	top: 10px;
+	width: 30px;
+}
+
+
+@media (max-width: 767px) {
+	.tile-grid {
+		padding: 30px 0;
+	}
+
+	.tile-grid h2 {
+		font-size: 1.8em;
+		margin-bottom: 30px;
+	}
+
+	.read-more a {
+		font-size: 1.2em;
+	}
+
+	.read-more a:before {
+		height: 20px;
+	}
+}
+
+@media (max-width: 479px) {
+	.tile-grid h2 {
+		font-size: 1.5em;
+	}
+}
+
+/*********************************/
+/* END Pattern: tile-grid        */
+/*********************************/

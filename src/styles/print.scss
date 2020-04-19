@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@import 'fonts';
+@import 'colors';
+@import 'bootstrap-variables';
+
+
+@page {
+    margin: 20mm 20mm 20mm 20mm;
+}
+
+body {
+    color: black;
+    font-family: "Myriad Roman", "Myriad Pro", "PT Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+#header h1 a {
+    text-decoration: none;
+}
+
+#relatedcontent {
+    border-top: 1px solid #000;
+    margin-top: 1em;
+}
+#footer-charity {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#footer-charity:before {
+    content: "Copyright ";
+}
+
+
+/*================================================
+    REMOVE SCREEN-ONLY ELEMENTS
+=================================================*/
+
+.sr-only,
+#topnavbar, #navglobal, #navsearch,
+#navmain,
+#header-audience,
+#header-search,
+#breadcrumbs,
+#welcomeimage, #featurenav,
+#sidebar,
+#footer-links,
+nav.navigation-bar,
+.category-images .image-bg,
+.category-images .text-box-pointer,
+.navbox,
+#university-footer #social,
+#footer-tools,
+#footer-navigation,
+#accessibility .skip {
+    display: none;
+}
+
+/*================================================
+    DISPLAY PRINT LOGO
+=================================================*/
+
+#header-logo a, #web-application-header-logo a {
+    display: block;
+    height: 2cm;
+    width: 10cm;
+    background-image: url(../images/furniture/print-crest.png);
+    content:url(../images/furniture/print-crest.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#header-logo span, #web-application-header-logo span {
+    display: none;
+}
+
+
+
+/*==============================================================================
+    HEADINGS
+==============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Palatino, "Palatino Roman", "Palatino Regular", "Book Antiqua", Georgia, Times, serif;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 0;
+    padding: 0;
+}
+h2, h3, h4, h5, h6 {
+    font-family: "Myriad Roman", "Myriad Pro", "PT Sans", Arial, sans-serif;
+}
+h1 {font-size: 24pt;}
+h2 {font-size: 18pt;}
+h3 {font-size: 14pt;}
+h4 {font-size: 12pt;}
+h5 {font-size: 11pt; font-weight: bold;}
+h6 {font-size: 10pt; font-style: italic}
+
+/*==============================================================================
+    HTML
+==============================================================================*/
+
+a:link,
+a:visited {
+    background: transparent;
+    color: #000;
+    font-weight: normal;
+    text-decoration: underline;
+}
+a img {
+    border: none;
+}
+blockquote {
+    font-style: italic;
+    margin: 2em;
+}
+code {
+    font: 0.9em "Courier New", Monaco, Courier, monospace;
+}
+hr {
+    background: #ccc;
+    border: none;
+    color: #ccc;
+    height: 2px;
+    margin: 2em 0;
+    padding: 0;
+    width: 100%;
+}
+hr.space {
+    background: #fff;
+    color: #fff;
+}
+
+#content img {
+    clear: both;
+    margin:1.5em 1.5em 1.5em 0;
+    max-width: 100%;
+    height: auto;
+}
+
+aside {
+	border-top: solid 2px #ccc;
+	padding-top: 1em;
+}
+
+
+/*==============================================================================
+    TABLE
+==============================================================================*/
+table {
+    margin: 1px;
+    text-align: left;
+    width: 100%;
+}
+th {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+}
+tr {
+    page-break-inside: avoid;
+}
+td {
+    border-bottom: 1px solid #333;
+}
+th, td {
+    padding: 4px 10px 4px 0;
+}
+tfoot {
+    font-style: italic;
+}
+caption {
+    background: #fff;
+    margin-bottom: 2em;
+    text-align:left;
+}
+thead {
+    display: table-header-group;
+}
+
+
+/*==============================================================================
+    CLASSES
+==============================================================================*/
+
+.box {
+    border: 2px solid dimgray;
+    padding: 12px;
+}
+.box a,
+.box p {
+    margin: 0;
+    padding: 0;
+}
+.box h3 {margin-top: 0;}
+.hide,
+.hidden {display: none;}
+.large  {font-size: 1.1em;}
+.small  {font-size: 0.9em;}
+.pagebreak,
+.pagebreak-before {
+    page-break-before: always;
+}
+.pagebreak-after {
+    page-break-after: always;
+}
+.quiet  {color: #999;}
+
+/*==============================================================================
+    REPLACED CONTENT
+==============================================================================*/
+
+/* Replace content - print URLs (but not in-page #links)
+==============================================================================*/
+#content a[href^="http://"]:link:after,#content a[href^="http://"]:visited:after,
+#content a[href^="https://"]:link:after,#content a[href^="https://"]:visited:after,
+#content a[href^="mailto:"]:link:after,#content a[href^="mailto"]:visited:after,
+#relatedcontent a[href^="http://"]:link:after,#relatedcontent a[href^="http://"]:visited:after,
+#relatedcontent a[href^="https://"]:link:after,#relatedcontent a[href^="https://"]:visited:after,
+#relatedcontent a[href^="mailto:"]:link:after,#relatedcontent a[href^="mailto:"]:visited:after {
+    border: 0;
+    color: #000;
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+}
+#content a[href^="#"]:link:after,
+#content a[href^="#"]:visited:after,
+#relatedcontent a[href^="#"]:link:after,
+#relatedcontent a[href^="#"]:visited:after,
+#content a[rel="contents"]:after {
+    content :"";
+}
+/* Print abbreviations and acronym titles after content */
+#content abbr:after,
+#content acronym:after {
+    content: " (" attr(title) ") ";
+}
+
+/*==============================================================================
+    DISPLAY ACCORDION TOGGLE CONTENT
+==============================================================================*/
+
+.accordion .toggle {
+	display: block!important;
+}
+
+/*==============================================================================
+    BREADCRUMBS
+==============================================================================*/
+
+.breadcrumbs {
+    display: none;
+}
+
+/*==============================================================================
+    CATEGORY HEADER
+==============================================================================*/
+
+#category-header {
+    display: none;
+}
+
+/*==============================================================================
+    CONTACT CARD
+==============================================================================*/
+
+.contact-card img {
+    display: none;
+}
+
+.contact-card-links {
+    list-style-type: none;
+}
+
+/*==============================================================================
+    HEADER
+==============================================================================*/
+
+#header-authenticated .btn-group {
+    display: none;
+}
+
+/*==============================================================================
+    FEATURED MEDIA
+==============================================================================*/
+
+.featured-media img {
+    display: none;
+}
+
+/*==============================================================================
+    KIS WIDGET
+==============================================================================*/
+
+
+.kis-widget-red {
+    display: none;
+}
+
+.honours-degree-column ul {
+    margin-bottom: 0;
+}
+
+.honours-degree-item a {
+    text-decoration: none
+}
+
+.honours-degree-item button {
+    display: none;
+}
+/*==============================================================================
+    LONG FORM CONTENT
+==============================================================================*/
+
+.long-form {
+    font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    line-height: 1.5;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-family-sans-serif  ;
+        font-weight: bold;
+    }
+
+    figure {
+        margin-bottom: 25px; // to match <p> styling.
+
+        figcaption {
+            font-size: 14px;
+            font-family: $font-family-sans-serif;
+            padding: 8px 0;
+        }
+
+
+
+    }
+}
+
+.long-form-bg-dark, .long-form-bg-light {
+    background: none !important;
+}
+.long-form-bg-darken {
+    background: none;
+}
+
+figure img {
+    width: 100%;
+}
+
+aside.parallel-left {
+    border: none;
+    float: left;
+    clear: left;
+    padding: 10px 20px;
+    padding-left: 0;
+    width: 150px;
+}
+
+aside.parallel-right {
+    border: none;
+    float: right;
+    clear: right;
+    padding: 10px 20px;
+    padding-right: 0;
+    width: 150px;
+}
+
+aside.parallel-left figure,
+aside.parallel-right figure {
+    padding: 0;
+    margin: 0;
+}
+
+.long-form .pull-quote {
+    font-size: 28px;
+    font-style: italic;
+    line-height: 1.8;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+
+.long-form-thumbnail-gallery {
+    figure.image {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        figcaption {
+            text-align: left;
+        }
+    }
+
+    img {
+        height: 170px;
+        width: auto !important;
+    }
+}
+
+/*==============================================================================
+    STAFF PROFILES
+==============================================================================*/
+
+.staff-profile img, .staff-profile .btn {
+    display: none;
+}
+
+/*==============================================================================
+    VIDEOS
+==============================================================================*/
+
+.embed-responsive {
+    display: none;
+}
+
+/*==============================================================================
+    PANELS
+==============================================================================*/
+
+.panel-title a {
+    text-decoration: none;
+}
+
+/*==============================================================================
+    ACCORDIONS
+==============================================================================*/
+
+.accordion > div {
+    display: block !important;
+}
+
+/*==============================================================================
+    NEWS UPDATES
+==============================================================================*/
+
+.news-updates figure {
+    display:none;
+}
+
+.news-updates a.btn {
+    display:none;
+}
+
+.news-updates a {
+    text-decoration: none;
+}
+
+/*==============================================================================
+    TILE GRID
+==============================================================================*/
+
+.tile-image-title img, .tile-grid .read-more.read-more-container {
+    display: none;
+}
+
+/*==============================================================================
+    FORM BANNER
+==============================================================================*/
+
+.form-banner {
+    display: none;
+}
+
+/*==============================================================================
+    CODE
+==============================================================================*/
+
+pre code {
+    display: none;
+}

@@ -1,0 +1,176 @@
+---
+title: Example form elements page
+---
+
+{{> text-banner examples-text-banner.form-elements}}
+
+{{> header}}
+
+{{> category-header examples-form-elements.category-header}}
+
+<div class="container dpl-form">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Sample forms</h2>
+            <p>Some of the most commonly used forms on the University website</p>
+            <h3>Options</h3>
+            <ul>
+                <li><a href="#signin">Sign in</a></li>
+                <li><a href="#personal">Personal details</a></li>
+                <li><a href="#address">Address</a></li>
+            </ul>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <fieldset>
+                    <legend id="signin">Sign in</legend>
+                    <div class="form-group">
+                        <label class="control-label" for="username">Username</label>
+                        <input class="form-control" id="username" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password</label>
+                        <input class="form-control" id="password" type="password">
+                    </div>
+                    <div class="container dpl-form">
+                    <div class="form-group">
+                        <div class="radio-button">
+                            <label>Options</label>
+                            <p>How many fudge doughnuts would you like?</p>
+                            <ul>
+                                <li>
+                                    <input class="conditional-radio" type="radio" value="default" id="option1-radio-conditional" name="conditional">
+                                    <label for="option1-radio-conditional">One</label>
+                                    <div class="check "></div>
+                                </li>
+                                <li>
+                                    <input class="conditional-radio" type="radio" value="default" id="option2-radio-conditional" name="conditional">
+                                    <label for="option2-radio-conditional">Two</label>
+                                    <div class="check "></div>
+                                </li>
+                                <li>
+                                    <input class="conditional-radio" type="radio" value="default" id="option3-radio-conditional" name="conditional">
+                                    <label for="option3-radio-conditional">Three</label>
+                                    <div class="check "></div>
+                                </li>
+                                <li>
+                                    <input class="conditional-radio" type="radio" value="other" id="option4-radio-conditional" name="conditional">
+                                    <label for="option4-radio-conditional">Other</label>
+                                    <div class="check "></div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="conditional-content-radio" aria-hidden="true">
+                                <label class="control-label" for="conditional-input1">Other</label>
+                                <input class="form-control" id="conditional-input1" name="conditional" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group select-box">
+                        <label class="form-label" for="select-box">Status</label>
+                        <p>Please select your student status.</p>
+                        <select class="conditional-select form-control" id="select-box" name="select-box">
+                            <option value="">Please select one of the following…</option>
+                            <option value="ug">Undergraduate</option>
+                            <option value="pgr">Research postgraduate</option>
+                            <option value="pgt">Taught postgraduate</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="conditional-content-select" aria-hidden="true">
+                            <label class="control-label" for="conditional-input2">Other</label>
+                            <input class="form-control" id="conditional-input2" type="text">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <form>
+                <fieldset><legend id="personal">Personal details</legend>
+                    <div class="form-group">
+                        <label class="control-label" for="title">Title</label>
+                        <input class="form-control" id="title" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="firstName">First name</label>
+                        <input class="form-control" id="firstName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastName">Last name</label>
+                        <input class="form-control" id="lastName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="dob">Date of birth</label>
+                        <span class="help-block">Enter your d.o.b. in the following format, 'DD/MM/YYYY'.</span>
+                        <input class="form-control" id="dob" type="text">
+                    </div>
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <form>
+                <fieldset><legend id="address">Address</legend>
+
+                    <div class="form-group">
+                        <label class="control-label" for="address1">Address line 1</label>
+                        <input class="form-control" id="address1" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="address2">Address line 2 (optional)</label>
+                        <input class="form-control" id="address2" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="country">Country</label>
+                        <select class="form-control" id="country">
+                            <option value="">Please select one of the following...</option>
+                            <option value="AFG">Afghanistan</option>
+                            <option value="ALA">Åland Islands</option>
+                            <option value="ALB">Albania</option>
+                            <option value="DZA">Algeria</option>
+                            <option value="ASM">American Samoa</option>
+                            <option value="AND">...</option>
+                            <option value="WLF">Wallis and Futuna</option>
+                            <option value="ESH">Western Sahara</option>
+                            <option value="YEM">Yemen</option>
+                            <option value="ZMB">Zambia</option>
+                            <option value="ZWE">Zimbabwe</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="city">Town / city</label>
+                        <input class="form-control" id="city" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="county">County / state / province / region</label>
+                        <input class="form-control" id="county" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="Postcode">Postcode / zipcode</label>
+                        <span class="help-block">Enter your postcode without any spaces. For example, 'KY169AL'.</span>
+                        <input class="form-control" id="postcode" type="text">
+                    </div>
+
+                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div>
+<br>
+{{> footer examples-footer}}
+

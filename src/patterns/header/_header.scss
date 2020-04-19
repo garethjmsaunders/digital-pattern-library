@@ -1,0 +1,267 @@
+
+/*********************************/
+/* BEGIN Pattern: header         */
+/*********************************/
+
+#header {
+    @extend .container;
+}
+
+#header .clear {
+    clear: both;
+}
+
+#header-audience {
+    @extend .col-sm-5;
+    border-bottom: 1px solid $gray-lighter;
+
+    .audience {
+        display: inline-block;
+        margin-top:    7px;
+        margin-right:  13px;
+        margin-bottom: 7px;
+    }
+}
+
+#header-authenticated {
+    @extend .col-sm-5;
+    border-bottom: 1px solid $gray-lighter;
+    float: right;
+    width: 100%;
+
+    .btn-group {
+        float: right;
+    }
+
+    .btn {
+        border-bottom: none;
+        -webkit-transition: none;
+           -moz-transition: none;
+                transition: none;
+        z-index: 1001;
+    }
+
+    .open .btn {
+        background-color: white;
+        border:        1px solid rgba(0,0,0,0.15);
+        border-bottom: none;
+    }
+
+    .dropdown-menu {
+        margin-top: -1px;
+        right: 0;
+        left:  auto;
+    }
+}
+
+// Set the logo and authenticated button to be on the same line.
+.web-application-header {
+    float: none !important;
+
+    a {
+        padding-left: 0;
+    }
+}
+
+#logo-container {
+    @extend .col-sm-7;
+    @extend .col-xs-7;
+}
+
+#header-logo, #web-application-header-logo {
+    margin: 13px 0;
+
+    h1 {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        background-image:    url(../images/furniture/logo-standard.svg);
+        background-position: left center;
+        background-repeat:   no-repeat;
+        background-size:     100%;
+        background-size:     contain;
+        display: inline-block;
+        height: 50px;
+        max-width: 205px;
+        -webkit-transition: none;
+           -moz-transition: none;
+                transition: none;
+        width: 100%;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+#web-application-header-logo {
+    margin: 0;
+
+    h1 {
+        height: 38px;
+    }
+
+    a {
+        // Logo - crest only.
+        background-image: url(../images/furniture/university-of-st-andrews-crest.svg);
+        height: 30px;
+        margin-top: 5px;
+    }
+}
+
+#header-search {
+    @extend .col-sm-5;
+    @extend .col-xs-5;
+    margin-top: 19px;
+    text-align: right;
+
+    form {
+        display: none;
+    }
+
+    #header-search-close {
+        margin-left: -13px
+    }
+
+    .form-control {
+        height: auto;
+    }
+}
+
+#header-search-trigger {
+    font-size: 22px;
+    margin-top: -5px;
+}
+
+@media (min-width: 468px) {
+    #header-search form {
+        display: block;
+    }
+
+    // Hide the search-trigger and search-close buttons
+    // on larger screens since those are only used for the
+    // interactivty on small screens.
+    #header-search-trigger, #header-search-close {
+        display: none;
+    }
+}
+
+// BEGIN desktop styles
+
+@media (min-width: 768px) {
+
+    #header .clear {
+        clear: none;
+    }
+
+    #header-audience, #header-authenticated {
+        border-bottom: none;
+        margin-top: 11px;
+        text-align: right;
+    }
+
+    #header-authenticated {
+        margin-top: auto;
+        width: auto;
+    }
+
+    #header-audience .audience {
+        margin-left:  13px;
+        margin-right: 0;
+    }
+
+    /* On desktops, when the audience shows on the right
+     * align the dropdown-menu to the right. */
+    #header-audience .dropdown-menu {
+        right: 0;
+        left:  auto;
+    }
+
+    #header-logo {
+        margin: 25px 0px 16px;
+
+        h1 {
+            height: 65px;
+        }
+
+        a {
+            background-image: url(../images/furniture/logo-foundation.svg);
+            height: 60px;
+            max-width: 325px;
+        }
+    }
+
+    #web-application-header-logo a {
+        // Logo - crest with text.
+        background-image: url(../images/furniture/logo-standard.svg);
+    }
+}
+// END desktop styles
+
+/* BEGIN: LAYOUT HACK
+ * In order to get the elements in the correct order on mobile,
+ * we have to engage in some shenaningans. The mobile layout should
+ * be:
+ *     AUDIENCE
+ *     LOGO   |  SEARCH
+ *
+ * but on desktop it should be
+ *     LOGO   |  AUDIENCE
+ *     LOGO   |  SEARCH
+ *
+ * So we put the elements in the following order which makes it easy
+ * to achieve the mobile layout
+ *  - AUDIENCE
+ *  - LOGO
+ *  - SEARCH
+ *
+ * And then position SEARCH absolutely on larger screens.
+ */
+
+@media (min-width: 768px) {
+    #header .row {
+        /* By adding a position property to this selector,
+         * this element will act as an anchor for absolutely
+         * positioned child elements */
+        position: relative;
+    }
+
+    #header-search {
+        /* Positioning absolutely, here, refers the first parent
+         * with a 'position' attribute which should be the containing
+         * row. This means we can align it to the right. */
+        position: absolute;
+        top:   18px;  // Note: this is a 'magic' number.
+        right: 0;
+    }
+}
+/* END: LAYOUT HACK */
+
+// BEGIN audience header modifier
+// Note there are some further changes under 'desktop for this'
+.header--audience {
+    #logo-container {
+        @extend .col-sm-pull-5;
+    }
+
+    #header-audience {
+        @extend .col-sm-push-7;
+    }
+
+    @media (min-width: 768px) {
+        #header-search {
+            /* When the audience links are showing then push the search down
+             * a bit more. */
+            top: 30px;  // Note: this is another 'magic' number.
+        }
+    }
+}
+// END audience header modifier
+
+
+/*********************************/
+/* END Pattern: header           */
+/*********************************/

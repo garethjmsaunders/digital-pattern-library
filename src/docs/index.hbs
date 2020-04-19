@@ -1,0 +1,108 @@
+---
+title: Digital Pattern Library
+layout: _base.hbs
+---
+
+<div class="container">
+    <div class="row">
+
+<div class="col-md-8 col-sm-6 content">
+
+            <p>The digital pattern library (DPL) is a comprehensive new resource designed to offer tools and support to university colleagues designing or developing new web pages and other digital outputs.</p>
+            <p>Created and curated by the University’s <a href="http://digitalcommunications.wp.st-andrews.ac.uk/about/">digital communications team</a>, the digital pattern library is an evolving set of design patterns underpinning a new digital approach for St Andrews, built collaboratively and tested with the people who use our products.</p>
+            <p>Its purpose is to ensure a consistent user experience, look and feel for all new digital products at the University of St Andrews. It follows the best-practice design principles of the digital communications team, is version controlled via GitHub and is platform agnostic.</p>
+
+            <p><a href="patterns.html" class="btn btn-lg btn-primary">Explore the patterns</a></p>
+
+            <hr>
+
+            <h2>How we can help</h2>
+
+            <p>The digital communications team actively and enthusiastically works with colleagues across the University to</p>
+            <ul>
+                <li>Consult on projects that use the DPL.</li>
+                <li>Train developers on the use of existing patterns.</li>
+                <li>Create new patterns.</li>
+            </ul>
+            <p>If you would like to use the digital pattern library for your own web project the digital communications team can help.</p>
+            <p>Please contact the digital communications team by email via <a href="mailto:itservicedesk@st-andrews.ac.uk">itservicedesk@st-andrews.ac.uk</a>.</p>
+
+             <!-- Begin pattern: accordion //-->
+            <div class="accordion">
+                <h3>Kick-off meeting</h3>
+                 <div>
+                    <p>All developers (including external agencies or partners) who wish to use the DPL to build a product must first organise a kick-off meeting with the digital communications team. It is advisable to do this as soon as possible near the start of your project (within the appraise or define stages).</p>
+                    <p>At this meeting, rules, responsibilities and sign-off gateways will be agreed. These include:</p>
+                    <ul>
+                        <li>Information architecture (for webpages);</li>
+                        <li>Workflows (for web applications);</li>
+                        <li>Adherence to digital standards, including user-centred design, content management, URL policy, house style, and corporate identity;</li>
+                        <li>Training.</li>
+                    </ul>
+                    <p>At this meeting, we will ask for a clear written commitment that no new product using the DPL will go live without the explicit, written sign-off by the digital communications team.</p>
+                </div>
+            </div>
+            <!-- End pattern: accordion //-->
+
+            <!-- Begin pattern: accordion //-->
+            <div class="accordion">
+                <h3>Developing new patterns</h3>
+                <div>
+                    <p>To ensure design integrity and consistency of experience for our website users we will ask you to agree that:</p>
+                    <ul>
+                        <li>New patterns must be created only by developers working directly alongside the digital communications team;</li>
+                        <li>No patterns or elements (such as colours) in the DPL may be edited without first liaising with the digital communications team;</li>
+                        <li>CSS or JavaScript must not be used to overrule DPL elements, patterns, fonts, etc.;</li>
+                        <li>Developers using the DPL must not fork the version controlled repository.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Begin pattern: accordion //-->
+            <div class="accordion">
+                <h3>Going live</h3>
+                <div>
+                    <p>Before going live to a production environment with a new website or application, the digital communications team will be involved in a final quality assurance process.</p>
+                    <p>Once explicit and written sign-off has been given by the digital communications team the website or web application may be launched, subject to other University deployment guidelines.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <h3>Current version</h3>
+
+            <dl>
+                <dt>Build number</dt>
+                <dd>v{{pkg.version}}</dd>
+            </dl>
+
+            <dl>
+                <dt>Build date and time</dt>
+                <!-- Format should be: Thursday 29 September 2016
+                Documentation for format can be found on Ruby Doc:
+                http://ruby-doc.org/core-2.3.1/Time.html#M000392 -->
+                <dd>{{formatDate date "%A %e %B %Y"}}<br>{{formatDate date "%H:%M"}}</dd>
+            </dl>
+
+            <dl>
+                <dt>What's new?</dt>
+                <dd><a href="https://github.com/standrewsdigital/digital-pattern-library/blob/master/CHANGELOG.md">Change log</a></dd>
+            </dl>
+
+            <hr>
+            <h3>Digital standards</h3>
+            <ul>
+                <li><a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/">Service manual</a></li>
+                <li><a href="http://www.st-andrews.ac.uk/digital-standards/service-manual/code-standards/">Code standards</a></li>
+            </ul>
+
+            <hr>
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library" class="btn btn-primary">GitHub repository</a></p>
+
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library/milestones" class="btn btn-primary">Development milestones</a></p>
+
+            <p><a href="https://github.com/standrewsdigital/digital-pattern-library/issues" class="btn btn-danger">Report an issue</a></p>
+
+        </div>
+    </div>
+</div>

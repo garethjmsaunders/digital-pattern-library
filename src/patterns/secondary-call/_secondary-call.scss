@@ -1,0 +1,120 @@
+
+/**********************************************/
+/* BEGIN Pattern: secondary-call-to-action    */
+/**********************************************/
+
+@mixin secondary-call-overlay ($color-overlay, $color-cta, $color-cta-hover){
+   &:after {
+       background-color: rgba($color-overlay,0.75);
+   }
+   .btn, .btn-primary {
+        background-color: $color-cta;
+        border-bottom: 5px solid $color-cta-hover;
+   }
+
+   .btn:hover, .btn:focus {
+        background-color: $color-cta-hover;
+        border-bottom: 5px solid $color-cta-hover;
+    }
+}
+
+.secondary-call {
+    background-color: $sta-grey;
+    background-image: url(../images/secondary-call/0.jpg); //fallback background image
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 40px 0;
+    position: relative;
+    text-align: center;
+
+    &.secondary-call--overlay {
+         &:after {
+             content: ' ';
+             height: 100%;
+             position: absolute;
+                top: 0;
+                left: 0;
+             width: 100%;
+             z-index: 1;
+         }   
+    }
+
+
+    &.secondary-call--purple-transparent-overlay {
+        @include secondary-call-overlay ($sta-purple, $sta-green, $sta-green-hover)
+    }
+
+    &.secondary-call--blue-transparent-overlay {
+        @include secondary-call-overlay($sta-blue, $sta-orange, $sta-orange-hover)
+    }
+
+    &.secondary-call--orange-transparent-overlay {
+        @include secondary-call-overlay ($sta-orange, $sta-green, $sta-green-hover)
+    }
+
+    &.secondary-call--burgundy-transparent-overlay {
+        @include secondary-call-overlay ($sta-burgundy, $sta-blue, $sta-blue-hover)
+    }
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .call-heading {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0 auto;
+        text-shadow: 2px 2px 9px rgba(68,68,68,0.7);
+
+        @media (min-width: 480px){
+          font-size: 1.8em;
+        }
+
+        @media (min-width: 768px){
+          font-size: 2.5em;
+        }
+    }
+
+    p {
+        color: white;
+        margin: 20px auto;
+
+        @media (min-width: 768px){
+          font-size: 21px;
+          line-height:1.5;
+        }
+    }
+
+    &.left p, &.left .call-heading {
+        text-align: left;
+        width: 100%;
+
+        @media (max-width: 991px){
+          text-align: center;
+        }
+    }
+
+    .btn {
+        background-color: $sta-blue;
+        border: 0;
+        margin: 0 15px 20px 15px;
+
+        &:hover,
+        &:focus {
+            background-color: $sta-blue-hover;
+        }
+
+        @media (min-width: 768px){
+            font-size:25px;
+        }
+    }
+
+}
+
+/**********************************************/
+/* END Pattern: secondary-call-to-action      */
+/**********************************************/

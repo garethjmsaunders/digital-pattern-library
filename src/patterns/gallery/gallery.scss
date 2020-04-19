@@ -1,0 +1,44 @@
+/*********************************/
+/* BEGIN Pattern: gallery         */
+/*********************************/
+
+.gallery__images, .lightbox_gallery_images {
+    @extend .row;
+
+    figure {
+        @extend .col-md-3;
+        @extend .col-sm-4;
+        @extend .col-xs-6;
+        margin-bottom: 1.5em;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: none;
+        }
+
+        .btn {
+            margin-top: 20px; 
+        }
+
+        figcaption + p {
+            margin-top:10px;
+        }
+    }
+
+}
+
+.lightbox .lb-data .lb-caption {
+    font-size: 18px;
+}
+
+@media (max-width: 360px) {
+    .gallery__images figure, .lightbox_gallery_images figure {
+        width: 100%;
+    }
+}
+/*********************************/
+/* END Pattern: gallery          */
+/*********************************/

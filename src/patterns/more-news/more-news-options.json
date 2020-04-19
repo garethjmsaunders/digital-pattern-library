@@ -1,0 +1,135 @@
+{
+    "options" : [
+        {
+            "option-heading": "Single",
+            "option-description": "<p>Example of how an article should be set out.</p>",
+            "option-anchor": "single",
+            "news-items": [
+                {
+                    "title": "News story title",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "7 February 2017",
+                    "category": "News at St Andrews"
+                }
+            ],
+            "pager": false
+        },
+
+
+
+
+        {
+            "option-heading": "Multiple",
+            "option-description": "<p>Example of more than 10 articles on a page.</p>",
+            "option-anchor": "multiple",
+            "news-items": [
+                {
+                    "title": "New URL shortening service",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "New URL shortening service",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "New URL shortening service",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "6 February 2017",
+                    "category": "Articles and resources",
+                    "not-last": true
+                },
+                {
+                    "title": "How to conduct usability testing",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "24 October 2016",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
+                },
+                {
+                    "title": "How to use Track Changes in Word",
+                    "description": "This section of text should not exceed 220 characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetuor.",
+                    "image": {
+                        "url": "../../assets/docs/images/placeholders/360x240.png"
+                    },
+                    "date": "10 February 2017",
+                    "category": "Guides",
+                    "not-last": true
+                }
+            ],
+            "pager": true
+        }
+
+
+    ]
+}

@@ -1,0 +1,30 @@
+<!-- Begin pattern: navbox //-->
+{{#if sidebar}}<div class="col-md-8">{{/if}}
+{{#if grid-row}}<div class="row">{{/if}}
+{{#each box-size}}
+{{#if row}}<div class="row">{{/if}}
+    <div class="{{column}}">
+        <div class="navbox {{#if visible}} {{visible}} {{/if}}">
+            {{#if image}}
+            <div class="navbox-image">
+                <img src="{{image.url}}" alt="{{image.alt}}">
+            </div>
+            {{/if}}
+            <div class="navbox-title" role="button">
+                <a href="#">{{{title}}}</a>
+            </div>
+        </div>
+        {{#if text}}
+        <p>{{text}}</p>
+        {{/if}}
+    </div>
+{{#if row}}</div>{{/if}}
+{{/each}}
+{{#if grid-row}}</div>{{/if}}
+{{#if sidebar}}
+        </div>
+        <div class="col-sm-4" {{#if role}}role="{{role}}"{{/if}}>
+            {{{sidebar}}}
+        </div>
+    {{/if}}
+<!-- End pattern: navbox //-->

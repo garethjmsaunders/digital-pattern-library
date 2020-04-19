@@ -1,0 +1,36 @@
+---
+title: Gallery
+---
+
+<div class="alert alert-danger">This pattern is backwards-compatible with previous implementations of the gallery pattern &ndash; see the old gallery option below, which used the jQuery theatre plugin. Please do not use the old gallery markup because support for this will be removed at some point.</div>
+
+<p>The gallery pattern demonstrates a method of displaying a large number of images on a page and makes use of the <a href="http://lokeshdhakar.com/projects/lightbox2">Lightbox JavaScript library</a> to view the images in an immersive experience.</p>
+
+<h3>Rules for the gallery</h3>
+<ul>
+  <li>Gallery images must be in landscape orientation.</li>
+  <li>Full size gallery images must be 1280 &times; 960 pixels. This resolution must never be exceeded.</li>
+  <li>All images must have an aspect ratio of 4:3. This is the typical aspect ratio for photographs.</li>
+  <li>If an image's resolution is lower than 1280 &times; 960 pixels, then the image must have an aspect ratio of 4:3 at its highest native resolution.</li>
+  <li>Thumbnail images are not automatically generated from the full image and must be created separately.</li>
+  <li>Thumbnail images must be 360 &times; 240 pixels.</li>
+  <li>A gallery must only be used within the main body of a page.</li>
+  <li>A page may contain multiple galleries.</li>
+  <li>Use <code>data-lightbox="[gallery name]"</code> to group images together for each gallery.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#gallery-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/gallery-options.options}}
+</ul>
+
+{{#gallery-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+{{> gallery}}
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> gallery}}</code></pre>
+{{/gallery-options.options}}

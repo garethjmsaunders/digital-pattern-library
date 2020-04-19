@@ -1,0 +1,153 @@
+{
+    "options" : [
+        {
+            "option-heading": "Primary button",
+            "option-description": "<p>Primary buttons are used on all pages with the primary blue palette theme.</p>",
+            "option-anchor": "primary-button",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "Primary",
+                    "size": "btn btn-lg"
+                }
+            ]
+         },
+
+
+
+
+         {
+            "option-heading": "Secondary and tertiary buttons",
+            "option-description": "<p>Secondary and tertiary buttons are used on pages currently using the secondary and tertiary palette themes.</p>",
+            "option-anchor": "secondary-buttons",
+            "buttons": [
+                {
+                    "type": "secondary",
+                    "text": "Secondary",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "tertiary-1",
+                    "text": "Tertiary 1",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "tertiary-2",
+                    "text": "Tertiary 2",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "tertiary-3",
+                    "text": "Tertiary 3",
+                    "size": "btn btn-lg"
+                }
+            ]
+          },
+
+
+
+
+         {
+            "option-heading": "Label buttons",
+            "option-description": "<p>Label buttons must be used only on forms and other tasks that involve a user completing a task. For further information on the application of buttons in forms, see the <a href='../../patterns/form-elements/index.html'>form elements</a> pattern.</p>",
+            "option-anchor": "label-buttons",
+            "buttons": [
+                {
+                    "type": "success",
+                    "text": "Success",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "info",
+                    "text": "Info",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "warning",
+                    "text": "Warning",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "danger",
+                    "text": "Danger",
+                    "size": "btn btn-lg"
+                }
+            ]
+          },
+
+
+
+
+        {
+            "option-heading": "Icon buttons",
+            "option-description": "<ul><li>An icon button must be used when the button action is to download a file.</li><li>An associated <a href='../font-awesome/index.html'>font awesome</a> icon to the downloadable file must be included in the button.</li></ul>",
+            "option-anchor": "icon-buttons",
+            "buttons": [
+                {
+                    "type": "primary",
+                    "text": "PDF document",
+                    "icon-class": "fa fa-file-pdf-o",
+                    "icon-title": "PDF",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "primary",
+                    "text": "ZIP file",
+                    "icon-class": "fa fa-file-zip-o",
+                    "icon-title": "ZIP",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "primary",
+                    "text": "Word document",
+                    "icon-class": "fa fa-file-word-o",
+                    "icon-title": "Word",
+                    "size": "btn btn-lg"
+                },
+                {
+                    "type": "primary",
+                    "text": "Powerpoint presentation",
+                    "icon-class": "fa fa-file-powerpoint-o",
+                    "icon-title": "Powerpoint",
+                    "size": "btn btn-lg"
+                }
+            ]
+        },
+
+
+
+
+        {
+            "option-heading": "Tag buttons",
+            "option-description": "<p>Must only be used when linking to a tag or categories results page.</p>",
+            "option-anchor": "news-buttons",
+            "buttons": [
+                {
+                    "type": "tag",
+                    "text": "St Andrews",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Scotland",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Digital pattern library",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Climate change",
+                    "size": " btn"
+                },
+                {
+                    "type": "tag",
+                    "text": "Marine biology",
+                    "size": " btn"
+                }
+            ]
+          }
+    ]
+}

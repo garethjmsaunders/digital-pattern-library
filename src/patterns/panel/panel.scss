@@ -1,0 +1,107 @@
+
+/*********************************/
+/* BEGIN Pattern: panel          */
+/*********************************/
+
+.panel {
+    background-color: white;
+    border: 0;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+       -moz-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+            box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 0 auto 1em; // compressed bottom margin on stacked layouts
+
+    @media (min-width: 768px){
+        margin-bottom: 2em;
+    }
+}
+
+.panel-heading.big-target-click-zone {
+    cursor: pointer;
+}
+
+.panel-heading {
+    border-bottom:           1px solid transparent;
+    border-top-right-radius: -1px;
+    border-top-left-radius:  -1px;
+    font-size:   1.3em;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.panel-title {
+    font-size:   20px;
+    font-weight: normal;
+    line-height: inherit;
+}
+
+.panel-title {
+    color: inherit;
+    font-size: 21px;
+    margin-top:    0;
+    margin-bottom: 0;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.panel-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panel-body li {
+    margin-bottom: 5px;
+}
+
+.panel h3 {
+    @include -dpl-transition();
+}
+
+/* Colors */
+
+.panel-primary {
+    border-color: $sta-blue;
+}
+
+.panel-primary>.panel-heading:hover {
+    background: $sta-blue-hover;
+}
+
+.panel-secondary {
+    border-color: $sta-cyan-light;
+}
+
+.panel-secondary>.panel-heading:hover {
+    background: $sta-cyan-hover;
+}
+
+.panel-tertiary-1 {
+    border-color: $sta-green;
+}
+
+.panel-tertiary-1>.panel-heading:hover {
+    background: $sta-green-hover;
+}
+
+.panel-tertiary-2 {
+    border-color: $sta-burgundy;
+}
+
+.panel-tertiary-2>.panel-heading:hover {
+    background: $sta-burgundy-hover;
+}
+
+.panel-tertiary-3 {
+    border-color: $sta-purple;
+}
+
+.panel-tertiary-3>.panel-heading:hover {
+    background: $sta-purple-hover;
+}
+
+/*********************************/
+/* END Pattern: panel            */
+/*********************************/

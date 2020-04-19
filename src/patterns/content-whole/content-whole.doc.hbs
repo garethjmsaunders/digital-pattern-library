@@ -1,0 +1,28 @@
+---
+title: Content whole
+---
+
+<p>The content whole pattern contains a whole-width section for content.</p>
+
+<h3>Rules for content whole</h3>
+<ul>
+	<li>Use sparingly and in consultation with the digital communications team.</li>
+</ul>
+
+<h3>Options available</h3>
+<ul>
+{{#content-whole-options.options}}
+    <li><a href="#{{option-anchor}}">{{option-heading}}</a></li>
+{{/content-whole-options.options}}
+</ul>
+
+{{#content-whole-options.options}}
+<hr>
+<h3 id="{{option-anchor}}">{{option-heading}}</h3>
+{{{option-description}}}
+</div>
+{{> content-whole}}
+<div class="container">
+<span class="label label-default">Code</span>
+<pre><code class="pattern-source html">{{> content-whole}}</code></pre>
+{{/content-whole-options.options}}

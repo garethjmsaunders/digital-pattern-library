@@ -1,0 +1,30 @@
+{
+    "grid-row": true,
+    "box-size": [
+        {
+            "image": {
+                "url": "../assets/docs/images/placeholders/360x240-study.jpg",
+                "alt": "Description"
+            },
+            "title": "Study at St Andrews",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/placeholders/360x240-research.jpg",
+                "alt": "Description"
+            },
+            "title": "Research",
+            "column": "col-sm-4"
+        },
+        {
+            "image": {
+                "url": "../assets/docs/images/placeholders/360x240-alumni.jpg",
+                "alt": "Description"
+            },
+            "title": "Alumni and donors",
+            "column": "col-sm-4"
+        }
+    ]
+
+}

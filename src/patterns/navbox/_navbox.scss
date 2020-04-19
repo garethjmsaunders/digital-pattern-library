@@ -1,0 +1,139 @@
+/*********************************/
+/* BEGIN Pattern: navbox         */
+/*********************************/
+
+.navbox {
+	margin-bottom: 30px;
+    position: relative;
+
+    img { 
+        height: auto; 
+        max-width: 100%; 
+   }  
+}
+
+// .navbox-image img {
+// 	height: auto !important;
+//     width: 100% !important;
+// }
+
+.navbox-title {
+	background:        $sta-blue-T;
+	background-repeat: repeat;
+	// color: white !important;
+	font-size:   24px;
+    font-weight: bold;
+	padding: 15px 15px;
+    position: absolute;
+    bottom: 0;
+	text-shadow: 1px 1px 1px rgb(68, 68, 68);
+    width: 100%;
+	// @include -dpl-transition();
+}
+
+.navbox-title:before {
+	@extend i.chevron;
+	content: '';
+	float: right;
+	height: 35px;
+	top: 0;
+    width: 30px;
+}
+
+.navbox-title a {
+	color: white;
+	margin-right: 4px;
+    text-decoration: none;
+}
+
+.navbox:hover {
+	cursor: pointer;
+}
+
+.navbox-title:hover, .navbox:hover .navbox-title{
+	background: $sta-blue-T-hover;
+}
+
+.navbox-title p {
+	margin-bottom: 0;
+}
+
+.navbox-title acronym {
+	display: none;
+}
+
+/* .navbox-title is the first child of .navbox when
+	 .navbox-image is not showing (i.e. not present). */
+
+.navbox-title:first-child {
+	background: $sta-blue;
+	position: relative;
+	bottom: auto;
+}
+
+.navbox-title:first-child:hover,
+.navbox:hover .navbox-title:first-child{
+	background: $sta-blue-hover;
+}
+
+/* when a p tag immediately follows a navbox
+   tighten up the margin a bit. */
+
+.navbox + p {
+	margin-top: -20px;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .navbox-image {
+        max-height: 196px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	/* Make the title show below instead of on top of the image... */
+    .navbox-image {
+        max-height: 145px;
+        overflow: hidden;
+    }
+
+    .navbox-title {
+        font-size: 21px;
+        position: absolute;
+    }
+
+    .navbox-title:before {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .navbox {
+		margin-bottom: 1.5em;
+	}
+
+	.navbox-image {
+        max-height: 100%;
+		overflow: hidden;
+        position: absolute;
+        width: 100%;
+  	}
+
+  	.navbox-image img {
+  		margin-top: -20%;
+        width: 100%;
+  	}
+
+  	.navbox-title {
+		position: relative;
+        top: 0;
+	}
+
+}
+
+/*********************************/
+/* END Pattern: navbox           */
+/*********************************/
