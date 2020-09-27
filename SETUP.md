@@ -32,7 +32,7 @@ Last updated: Monday 6 December 2016
 
 ---
 
-This is a guide to get your environment set up to contribute to the digital pattern library. 
+This is a guide to get your environment set up to contribute to the digital pattern library.
 
 
 
@@ -67,10 +67,45 @@ To install Node.js:
 
 ### Grunt CLI
 
-Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-the-cli). Open a "Node.js command prompt" (Windows), Terminal (OS X), or shell (*nix) and run the following command:
+Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-the-cli). Open an elevated "Node.js command prompt" (Windows), Terminal (OS X), or shell (*nix) and run the following command:
 
 ```
 $ npm install -g grunt-cli
+```
+
+If you get an error message saying
+
+```
+npm does not support Node.js vX.Y.Z
+```
+
+You need to upgrade your version of NPM doing the following:
+
+In the Node.js Command Prompt type the following:
+
+```
+npm install -g npm@latest
+```
+
+You will likely get an error. Wait for the error to complete. It will show a message saying:
+
+```
+A complete log of this run can be found in:
+    C:\Users\NAME\AppData\Roaming\npm-cache...
+```
+
+Navigate to this folder in Windows Explorer and under C:\Users\NAME\AppData\Roaming delete the two folders: NPM and NPM-Cache.
+
+Then run
+
+```
+npm install -g npm@latest
+```
+
+Finally, run
+
+```
+npm install -g grunt-cli
 ```
 
 
@@ -81,9 +116,11 @@ We also use [Compass](http://compass-style.org/) to compile [Sass](http://sass-l
 
 #### Install Ruby on Windows
 
-The easiest way to install Ruby is with [RubyInstaller for Windows](http://rubyinstaller.org/downloads/). 
+The easiest way to install Ruby is with [RubyInstaller for Windows](http://rubyinstaller.org/downloads/).
 
-When prompted at the beginning of the installation make sure to check the box with the label "Add Ruby executables to your PATH". This will mean that you can run commands like `gem install ...`.
+Unless you know otherwise, stick to the default installation of Ruby.
+
+When prompted at the beginning of the installation make sure that the box with the label "Add Ruby executables to your PATH" is checked (it should be by default). This will mean that you can run commands like `gem install ...`.
 
 Once you're finished with the installation, you should close and reopen any command prompts that you have since they will need to get the updated PATH with Ruby added.
 
@@ -103,21 +140,21 @@ Recent versions of MacOS X already have Ruby installed, no further installation 
 Clone the Git repository into a folder on your computer using your Git client, or at the command line:
 
 ```
-git clone https://github.com/standrewsdigital/digital-pattern-library.git
+git clone https://github.com/garethjmsaunders/digital-pattern-library.git
 ```
 
 
 ### Install Grunt dependencies
 
-1. At the command line, navigate to the folder containing your local clone of 
-   the pattern library. 
+1. At the command line, navigate to the folder containing your local clone of
+   the pattern library.
     ```
         $ cd path/to/folder
     ```
-    Where `path/to/folder` is the path to the folder you cloned the pattern 
+    Where `path/to/folder` is the path to the folder you cloned the pattern
     library locally. (Or in Windows right-click within the folder containing your local clone of the pattern library and select 'Git Bash'.)
 
-2. Install the dependencies for building the pattern library using the [Node 
+2. Install the dependencies for building the pattern library using the [Node
    package manager, npm](https://www.npmjs.com/). The `package.json` file defines what dependencies are installed.
 
         $ npm install
@@ -170,8 +207,8 @@ If you already have the DPL installed and need to update the underlying packages
 
 
 ### 1. Make sure your Node.js version is up-to-date.
-   
-To find out which version you have, run `node -v` using Git Bash or the command line. 
+
+To find out which version you have, run `node -v` using Git Bash or the command line.
 
 Update to version `6.9.1 LTS` if you don't already have it from [http://nodejs.org/](http://nodejs.org/). All the default installation options work so there is no need to change them.
 
@@ -188,7 +225,7 @@ This can be found within the root of the DPL folder. This may take a long time d
 
 ### 4. Reinstall npm to your DPL directory.
 
-Run `npm install` using Git Bash or the command line. 
+Run `npm install` using Git Bash or the command line.
 
 
 ### 5. Verify it works.
