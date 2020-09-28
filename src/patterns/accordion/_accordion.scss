@@ -15,7 +15,7 @@
 }
 
 .accordion > h3:before {
-    @extend i.chevron;
+    @extend .chevron;
     @include rotate(180deg);
     content: '';
     float: right;

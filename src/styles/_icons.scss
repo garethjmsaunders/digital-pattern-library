@@ -1,4 +1,4 @@
-i.icon {
+.icon {
     position: relative;
     display: inline-block;
     -webkit-transition: all 200ms ease-out;
@@ -6,8 +6,8 @@ i.icon {
     transition: all 200ms ease-out;
 }
 
-i.chevron {
-    @extend i.icon;
+.chevron {
+    @extend .icon;
     top: 2px;
     height: .9em;
     width: 0.9em;
@@ -17,14 +17,14 @@ i.chevron {
     background-position: left center;
 }
 
-i.chevron.large {
+.chevron.large {
     height: 1.4em;
     width: 1.4em;
     top: .3em;
     margin-right: 0;
 }
 
-i.chevron.down {
+.chevron.down {
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -32,7 +32,7 @@ i.chevron.down {
     transform: rotate(90deg);
 }
 
-i.chevron.left {
+.chevron.left {
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -41,7 +41,7 @@ i.chevron.left {
     background-position: right center;
 }
 
-i.chevron.up {
+.chevron.up {
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);

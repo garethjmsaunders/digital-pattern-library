@@ -165,7 +165,7 @@
 }
 
 .read-more a:before {
-	@extend i.chevron;
+	@extend .chevron;
 	content: '';
 	float: right;
 	height: 28px;
