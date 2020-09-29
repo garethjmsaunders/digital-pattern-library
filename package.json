@@ -1,6 +1,6 @@
 {
     "name": "digital-pattern-library",
-    "version": "1.12.3",
+    "version": "1.999.1",
     "description": "digital pattern library.",
     "license": "",
     "cdn": {
@@ -25,6 +25,7 @@
         "handlebars-helper-asset": "git://github.com/sjparsons/handlebars-helper-asset.git#relative-links",
         "handlebars-helper-rel": "git://github.com/sjparsons/handlebars-helper-rel.git#fix",
         "handlebars-helpers": "~0.10.0",
+        "handlebars.moment": "~1.0.4",
         "swag": "~0.7.0"
     },
     "keywords": [
