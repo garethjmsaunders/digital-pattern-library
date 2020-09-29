@@ -1,31 +1,36 @@
 # Set up the digital pattern library
 
-Version 0.4
-Last updated: Monday 6 December 2016
+Version 0.5.0
+
+Last updated: Tuesday 29 September 2020
 
 <!-- MarkdownTOC -->
 
 - [1. Prerequisites](#1-prerequisites)
-    - [Git](#git)
-    - [Node.js](#nodejs)
-    - [Grunt CLI](#grunt-cli)
-    - [Ruby](#ruby)
-        - [Install Ruby on Windows](#install-ruby-on-windows)
-        - [Install Ruby on MacOS X](#install-ruby-on-macos-x)
+    - [1.1 Git](#11-git)
+    - [1.2 Node.js](#12-nodejs)
+    - [1.3 Grunt CLI](#13-grunt-cli)
+    - [1.4 Ruby](#14-ruby)
+        - [Ruby on Windows](#ruby-on-windows)
+        - [Ruby on MacOS X](#ruby-on-macos-x)
 - [2. Initialize developer tools](#2-initialize-developer-tools)
-    - [Clone the repository](#clone-the-repository)
-    - [Install Grunt dependencies](#install-grunt-dependencies)
-        - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
-    - [Install Compass Ruby gem](#install-compass-ruby-gem)
-    - [Conclusion](#conclusion)
-- [3. Update an existing install](#3-update-an-existing-install)
-    - [1. Make sure your Node.js version is up-to-date.](#1-make-sure-your-nodejs-version-is-up-to-date)
-    - [2. Checkout the branch from GitHub.](#2-checkout-the-branch-from-github)
-    - [3. Delete the `node_modules` folder.](#3-delete-the-node_modules-folder)
-    - [4. Reinstall npm to your DPL directory.](#4-reinstall-npm-to-your-dpl-directory)
-    - [5. Verify it works.](#5-verify-it-works)
+    - [2.1 Clone the repository](#21-clone-the-repository)
+    - [2.2 Install Grunt dependencies](#22-install-grunt-dependencies)
+    - [2.3 Install Compass Ruby gem](#23-install-compass-ruby-gem)
+    - [2.4 Run grunt](#24-run-grunt)
+    - [2.5 How to contribute](#25-how-to-contribute)
+- [3. How to update an existing install](#3-how-to-update-an-existing-install)
+    - [3.1 Make sure your Node.js version is up-to-date.](#31-make-sure-your-nodejs-version-is-up-to-date)
+    - [3.2 Checkout the branch from GitHub.](#32-checkout-the-branch-from-github)
+    - [3.3 Delete the `node_modules` folder.](#33-delete-the-node_modules-folder)
+    - [3.4 Reinstall npm to your DPL directory.](#34-reinstall-npm-to-your-dpl-directory)
+    - [3.5 Verify it works.](#35-verify-it-works)
 - [4. Troubleshooting](#4-troubleshooting)
-    - [Error: handlebars does not support render](#error-handlebars-does-not-support-render)
+    - [4.1 Node.js](#41-nodejs)
+        - [Error: npm does not support Node.js vX.Y.Z](#error-npm-does-not-support-nodejs-vxyz)
+    - [4.2 Grunt](#42-grunt)
+        - [Error: Unable to connect to github.com](#error-unable-to-connect-to-githubcom)
+        - [Error: handlebars does not support render](#error-handlebars-does-not-support-render)
 
 <!-- /MarkdownTOC -->
 
@@ -39,7 +44,7 @@ This is a guide to get your environment set up to contribute to the digital patt
 
 ## 1. Prerequisites
 
-### Git
+### 1.1 Git
 
 The digital pattern library code is stored in a Git repository, so you will need a Git client to clone it to your local machine and commit changes back to the repository.
 
@@ -54,18 +59,20 @@ There are also a number of GUI clients available; our favourites, in order, are:
 * [SourceTree](https://www.sourcetreeapp.com/)
 
 
-### Node.js
+### 1.2 Node.js
 
 The digital pattern library uses [Grunt](http://gruntjs.com/), the JavaScript task runner, to automate the build process. Grunt is built on [Node.js](http://nodejs.org/) which is a JavaScript runtime that uses [Google Chrome's V8 JavaScript engine](https://developers.google.com/v8/). If you're not familiar with either of these see [Getting started with Grunt](http://gruntjs.com/getting-started) for the basics.
 
 To install Node.js:
 
 1. Visit [http://nodejs.org/](http://nodejs.org/)
-2. Download the latest stable release.
+2. Download the latest stable release (LTS, recommended for most users).
 3. Run the installer.
 
+Having problems? See [troubleshooting Node.js](#41-nodejs).
 
-### Grunt CLI
+
+### 1.3 Grunt CLI
 
 Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-the-cli). Open an elevated "Node.js command prompt" (Windows), Terminal (OS X), or shell (*nix) and run the following command:
 
@@ -73,48 +80,16 @@ Next install the [Grunt command line interface (CLI)](http://gruntjs.com/using-t
 $ npm install -g grunt-cli
 ```
 
-If you get an error message saying
-
-```
-npm does not support Node.js vX.Y.Z
-```
-
-You need to upgrade your version of NPM doing the following:
-
-In the Node.js Command Prompt type the following:
-
-```
-npm install -g npm@latest
-```
-
-You will likely get an error. Wait for the error to complete. It will show a message saying:
-
-```
-A complete log of this run can be found in:
-    C:\Users\NAME\AppData\Roaming\npm-cache...
-```
-
-Navigate to this folder in Windows Explorer and under C:\Users\NAME\AppData\Roaming delete the two folders: NPM and NPM-Cache.
-
-Then run
-
-```
-npm install -g npm@latest
-```
-
-Finally, run
-
-```
-npm install -g grunt-cli
-```
 
 
-### Ruby
+
+
+### 1.4 Ruby
 
 We also use [Compass](http://compass-style.org/) to compile [Sass](http://sass-lang.com/) code to CSS. This requires [Ruby](https://www.ruby-lang.org/).
 
 
-#### Install Ruby on Windows
+#### Ruby on Windows
 
 The easiest way to install Ruby is with [RubyInstaller for Windows](http://rubyinstaller.org/downloads/).
 
@@ -125,9 +100,11 @@ When prompted at the beginning of the installation make sure that the box with t
 Once you're finished with the installation, you should close and reopen any command prompts that you have since they will need to get the updated PATH with Ruby added.
 
 
-#### Install Ruby on MacOS X
+#### Ruby on MacOS X
 
 Recent versions of MacOS X already have Ruby installed, no further installation is required.
+
+---
 
 
 
@@ -135,7 +112,7 @@ Recent versions of MacOS X already have Ruby installed, no further installation 
 ## 2. Initialize developer tools
 
 
-### Clone the repository
+### 2.1 Clone the repository
 
 Clone the Git repository into a folder on your computer using your Git client, or at the command line:
 
@@ -144,7 +121,7 @@ git clone https://github.com/garethjmsaunders/digital-pattern-library.git
 ```
 
 
-### Install Grunt dependencies
+### 2.2 Install Grunt dependencies
 
 1. At the command line, navigate to the folder containing your local clone of
    the pattern library.
@@ -159,10 +136,121 @@ git clone https://github.com/garethjmsaunders/digital-pattern-library.git
 
         $ npm install
 
+Having problems? See [troubleshooting Grunt](#42-grunt).
+
+
+
+
+### 2.3 Install Compass Ruby gem
+
+Install the Compass Ruby gem to compile Sass code into CSS.
+
+```
+$ gem install compass
+```
+
+
+### 2.4 Run grunt
+
+Before working on creating new patterns, test that everything works by opening your command prompt and running:
+
+```
+$ grunt
+```
+
+
+### 2.5 How to contribute
+
+You should now be configured to start work on the pattern library. Read [CONTRIBUTING.md](CONTRIBUTING.md) for some guidelines and principles of development.
+
+
+
+
+---
+
+
+
+
+## 3. How to update an existing install
+
+If you already have the DPL installed and need to update the underlying packages start here:
+
+
+### 3.1 Make sure your Node.js version is up-to-date.
+
+To find out which version you have, run `node -v` using Git Bash or the command line.
+
+Update to version `6.9.1 LTS` if you don't already have it from [http://nodejs.org/](http://nodejs.org/). All the default installation options work so there is no need to change them.
+
+
+### 3.2 Checkout the branch from GitHub.
+
+Use your prefered Git client to checkout the branch containing the updated `package.json` files.
+
+
+### 3.3 Delete the `node_modules` folder.
+
+This can be found within the root of the DPL folder. This may take a long time due to the size of these files.
+
+
+### 3.4 Reinstall npm to your DPL directory.
+
+Run `npm install` using Git Bash or the command line.
+
+
+### 3.5 Verify it works.
+
+Run `grunt` and if it works then you're successfully updated.
+
+---
+
+
+
+
+## 4. Troubleshooting
+
+### 4.1 Node.js
+
+#### Error: npm does not support Node.js vX.Y.Z
+
+If you get an error message saying `npm does not support Node.js vX.Y.Z` then you need to upgrade your version of NPM.
+
+1. In your command prompt application of choice (Git Bash, Node.js Command Prompt, Windows PowerShell, etc.) run the following:
+
+```
+npm install -g npm@latest
+```
+
+2. You will likely get an error. Wait for the error to complete. It will show a message that includes the following:
+
+```
+A complete log of this run can be found in:
+    C:\Users\NAME\AppData\Roaming\npm-cache...
+```
+
+3. Navigate to this folder in Windows Explorer, where `NAME` is your Windows user folder.
+
+4. Delete the two folders, `NPM` and `NPM-Cache` from `C:\Users\NAME\AppData\Roaming`, where `NAME` is your Windows user folder.
+
+5. In Git Bash (or other terminal window) run
+
+```
+npm install -g npm@latest
+```
+
+6. Finally, run
+
+```
+npm install -g grunt-cli
+```
+
+
+
+### 4.2 Grunt
 
 #### Error: Unable to connect to github.com
 
-If you get an error such as
+While trying to install Grunt dependencies, if you get an error such as
 
 ```
 npm ERR! Error: Command failed: fatal: unable to connect to github.com:
@@ -183,63 +271,7 @@ You can always find the location of your `.gitconfig` file by typing the followi
 (On Windows, to exit this editor press `Ctrl+C`, then type `:quit` and press Enter.)
 
 
-### Install Compass Ruby gem
-
-Install the Compass Ruby gem to compile Sass code into CSS.
-
-```
-$ gem install compass
-```
-
-
-### Conclusion
-
-You should now be configured to start work on the pattern library. You should now read [CONTRIBUTING.md](CONTRIBUTING.md) for some guidelines and principles of development.
-
----
-
-
-
-
-## 3. Update an existing install
-
-If you already have the DPL installed and need to update the underlying packages start here:
-
-
-### 1. Make sure your Node.js version is up-to-date.
-
-To find out which version you have, run `node -v` using Git Bash or the command line.
-
-Update to version `6.9.1 LTS` if you don't already have it from [http://nodejs.org/](http://nodejs.org/). All the default installation options work so there is no need to change them.
-
-
-### 2. Checkout the branch from GitHub.
-
-Use your prefered Git client to checkout the branch containing the updated `package.json` files.
-
-
-### 3. Delete the `node_modules` folder.
-
-This can be found within the root of the DPL folder. This may take a long time due to the size of these files.
-
-
-### 4. Reinstall npm to your DPL directory.
-
-Run `npm install` using Git Bash or the command line.
-
-
-### 5. Verify it works.
-
-Run `grunt` and if it works then you're successfully updated.
-
----
-
-
-
-
-## 4. Troubleshooting
-
-### Error: handlebars does not support render
+#### Error: handlebars does not support render
 
 If you get the following error when running Grunt:
 
