@@ -57,9 +57,14 @@ module.exports = function(grunt) {
             options: {
                 pkg:        '<%= pkg %>',
                 now:        '<%= grunt.template.today("isoDateTime") %>',
+                builddate:  '<%= grunt.template.today("dddd d mmmm yyyy") %>',
+                buildtime:  '<%= grunt.template.today("HH:MM") %>',
                 assets:     'docs/assets',
                 layoutdir:  'src/_layouts',
-                partials:   ['src/patterns/*/*.hbs', 'src/_partials/*.hbs'],
+                partials:   [
+                                'src/patterns/*/*.hbs',
+                                'src/_partials/*.hbs'
+                            ],
                 ext:        '.html',
                 data:       [
                                 'src/_meta/*.json',
