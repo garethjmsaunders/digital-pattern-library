@@ -2,7 +2,11 @@
 title: Digital Pattern Library
 layout: _base.hbs
 ---
-
+<script type="text/javascript">
+    var Handlebars = require("handlebars");
+    var MomentHandler = require("handlebars.moment");
+    MomentHandler.registerHelpers(Handlebars);
+</script>
 <div class="container">
     <div class="row">
 
@@ -78,10 +82,7 @@ layout: _base.hbs
 
             <dl>
                 <dt>Build date and time</dt>
-                <!-- Format should be: Thursday 29 September 2016
-                Documentation for format can be found on Ruby Doc:
-                http://ruby-doc.org/core-2.3.1/Time.html#M000392 -->
-                <dd>Sunday 27 September 2020<br>23:20</dd>
+                <dd>{{moment d "dddd DD MMMM YYYY"}}<br />{{moment d "HH:mm"}}</dd>
             </dl>
 
             <dl>
